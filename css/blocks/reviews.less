@@ -1,0 +1,59 @@
+// main: ../style.less
+
+.review__btn {
+    font-family: 'Raleway Bold';
+    font-size: 3.4rem;
+    color: #222222;
+    margin-bottom: 4rem;
+    & + .review__btn {
+        margin-left: 2.5rem;
+    }
+}
+
+.review__gallery {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -0.5rem;
+    &.active {
+        display: flex;
+    }
+}
+
+.review__gallery-item {
+    margin: 0.5rem;
+    flex-grow: 1;
+    & img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.review__btn {
+    transition: all 0.2s linear;
+    position: relative;
+    &::before {
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: #2EABE1;
+        position: absolute;
+        left: 0;
+        bottom: -1rem;
+        transition: all 0.2s linear;
+    }
+    &:hover {
+        color: #2EABE1;
+        &::before {
+            width: 100%;
+        }
+    }
+    &.active {
+        color: #2EABE1;
+        &::before {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+// main: ../style.less
+
+.whom__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -2rem -2rem;
+    @media (max-width: 810px) {
+        justify-content: center;
+    }
+}
+
+.whom__content-item {
+    flex: 1 1 calc((100% / 3) - 6rem);
+    display: flex;
+    align-items: center;
+    margin: 2rem 3rem;
+    @media (max-width: 1080px) {
+        flex-basis: calc((100% / 2) - 6rem);
+    }
+    @media (max-width: 768px) {
+        flex-basis: calc(100% - 6rem);
+        justify-content: center;
+    }
+}
+
+.whom__icon {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.whom__name {
+    font-family: 'Raleway Bold';
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #222222;
+    margin-bottom: 0.5rem;
+}
+
+.whom__text {
+    width: 100%;
+    max-width: 270px;
+    font-family: 'Ubuntu Regular';
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #222222;
+}

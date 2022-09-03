@@ -1,0 +1,57 @@
+// main: ../style.less
+
+.merit__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -2rem -2rem;
+    margin-bottom: 6rem;
+    text-align: left;
+    @media (max-width: 920px) {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.merit__content-item {
+    flex: 1 1 160px;
+    margin: 2rem 3.5rem;
+}
+
+.merit__content-title {
+    font-family: 'Raleway Bold';
+    font-size: 1.6rem;
+    color: #2EABE1;
+    margin-bottom: 1rem;
+}
+
+.merit__content-text {
+    font-family: 'Ubuntu Regular';
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #222222;
+}
+
+.merit__gallery {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -0.5rem;
+    margin-bottom: 5rem;
+}
+
+.merit__gallery-item {
+    display: none;
+    flex-grow: 1;
+    margin: 0.5rem;
+    & img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    &.active {
+        display: block;
+    }
+}

@@ -1,0 +1,154 @@
+// main: ../style.less
+
+.intro {
+    background-image: url("../img/intro-bg.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-top: 10rem;
+    @media (max-width: 835px) {
+        flex-wrap: wrap;
+    }
+}
+
+.intro__content {
+    width: 100%;
+    margin-right: 1rem;
+    @media (max-width: 835px) {
+        text-align: center;
+    }
+}
+
+.intro__content2 {
+    display: none;
+    @media (max-width: 835px) {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.intro__title {
+    font-family: 'Ubuntu Regular';
+    font-size: 3.3rem;
+    color: #2EABE1;
+    margin-bottom: 2rem;
+}
+
+.intro__text {
+    font-family: 'Ubuntu Regular';
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #222222;
+    margin-bottom: 2rem;
+    & span {
+        font-weight: 700;
+    }
+}
+
+.intro__list-title {
+    font-family: 'Ubuntu Medium';
+    font-size: 2rem;
+    color: #222222;
+    margin-bottom: 2rem;
+    & span {
+        color: #2EABE1;;
+    }
+    @media (max-width: 835px) {
+        display: none;
+        &:nth-child(1) {
+            display: block;
+        }
+    }
+}
+
+.intro__list {
+    margin-bottom: 2.5rem;
+    @media (max-width: 835px) {
+        display: none;
+        &:nth-child(2) {
+            display: block;
+        }
+    }
+}
+
+.intro__list-item {
+    font-family: 'Ubuntu Regular';
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #222222;
+    list-style: none;
+    & span {
+        font-weight: 700;
+        margin-right: 1rem;
+    }
+    @media (max-width: 570px) {
+        margin-bottom: 1rem;
+    }
+}
+
+.intro__info {
+    display: flex;
+    align-items: center;
+    @media (max-width: 835px) {
+        display: none;
+        &:nth-child(3) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.intro__time {
+    display: flex;
+    font-family: 'Ubuntu Regular';
+    font-size: 1.8rem;
+    color: #222222;
+    margin-right: 2.7rem;
+    & img {
+        margin-right: 1rem;
+    }
+    @media (max-width: 450px) {
+        margin-bottom: 1rem;
+    }
+}
+
+.intro__img {
+    width: 100%;
+    margin-right: -3.3rem;
+    transform: skew(-5deg, 0deg);
+    overflow: hidden;
+    & img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: skew(5deg, 0deg);
+        position: relative;
+        top: 0;
+        left: -3.3rem;
+    }
+    @media (max-width: 880px) {
+        transform: none;
+        margin: 0;
+        & img {
+            transform: none;
+            left: 0;
+        }
+    }
+    @media (max-width: 835px) {
+        width: 70%;
+        margin: 0 auto 3rem;
+    }
+    @media (max-width: 500px) {
+        width: 90%;
+        margin: 0 auto 3rem;
+    }
+}

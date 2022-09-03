@@ -1,0 +1,20 @@
+// main: ../style.less
+
+.mm__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -0.5rem;
+    margin-bottom: 5rem;
+}
+
+.mm__gallery-item {
+    flex-grow: 1;
+    margin: 0.5rem;
+    & img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
