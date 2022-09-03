@@ -1,2 +1,2 @@
-# yavaman.github.io-webinar
+# webinar
 Website
